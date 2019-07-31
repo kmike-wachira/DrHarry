@@ -214,7 +214,7 @@
   <?php 
    include 'pages/footer.php';
   include 'pages/register.php';
-  include 'pages/signin.php';
+  include 'pages/signIn.php';
   ?>
  <script>
  window.onscroll = function() {scrollFunction()};
