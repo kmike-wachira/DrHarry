@@ -4,7 +4,7 @@
   <div class="display-text ">
    <h2 class=" sliderHeading2  w3-animate-left  w3-center">Books</h2>
    <p   class="slider-paragraph">Read some of our exciting books/stories.</p>
-   <a href="jhsk"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Read</button></a>    
+   <a href="pages/stories.php"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Read</button></a>    
   </div>
 </div>
 
@@ -13,7 +13,7 @@
   <div class="display-text ">
    <h2 class=" sliderHeading2  w3-animate-left" style="">Poems</h2>
    <p  class="slider-paragraph">Get a range of beautifully written poems</p>
-   <a href="jhsk"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Read</button></a>    
+   <a href="pages/poems.php"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Read</button></a>    
   </div>
 </div>
 <div class="mySlides sliding-div" >
@@ -21,7 +21,7 @@
   <div class="display-text ">
    <h2 class=" sliderHeading2 w3-animate-left " style="">Join team</h2>
    <p  class="slider-paragraph">Join the writers team by signing in from the link below</p>
-   <a href="jhsk"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Read</button></a>    
+   <a href="pages/reg.php"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Join Here</button></a>    
   </div>
 </div>
 
