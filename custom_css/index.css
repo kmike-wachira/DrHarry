@@ -1,0 +1,246 @@
+body.w3-light-grey{
+    margin: 0px;
+  scroll-behavior: smooth;
+    background:grey;
+   
+}
+.slide-content{
+    height: 500px;
+}
+.sliding-div{
+    height: 500px;
+    position: relative;
+    
+}
+.sliderHeading2 {
+    background-color: brown;
+    padding: 5px;
+    border-radius:15px 15px 15px 15px;
+}
+.slider-paragraph{
+    background-color: coral;
+    padding: 5px;
+}
+.sliding-div img{
+    height: 500px;
+}
+.display-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+ 
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: lightgrey;;
+    color: brown;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+.navbar{
+    background-color:rgb(102, 51, 0);
+    border-radius:10px;
+    padding: 5px;
+    font-size: 22px;
+    color: black;
+}
+nav ul li a{
+  color:white;
+}
+
+.introduction{
+    width: 98%;
+    margin: auto;
+   /* margin-top: 66px; */
+    border-radius: 2px;
+    
+}
+.rowz{
+  background-image: url(../images/16..jpg);
+  
+}
+.row{
+    margin: auto;
+   
+}
+.col-xs-12{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: 25px; */
+}
+
+.about_note{
+    padding: 5px;
+    color: white;
+
+}
+.cardbackground{
+  background:white;
+  margin-left:20px;
+}
+.text{
+    font-size: 20px;    
+    text-align: center;
+    color:black;
+}
+.infoText{
+    font-size: 17px;
+}
+.intro-images{
+    height: 150px;
+    width:100%;    
+    
+}
+hr{
+  border:1px dotted black;
+}
+i{
+    width: 15px;
+}
+
+
+
+.intro-images { 
+    width: 100%;
+   
+}
+
+li.dropdown:active{
+  background: transparent;  
+}
+
+.headerContainer{
+    text-align: center;
+    border-radius: 65px 65px 5px 5px;
+}
+.navbar-nav{
+    background-color: transparent;
+}
+
+
+.weOffer{
+    margin-top: 25px;
+    margin: auto;
+    width: 25%;
+   
+  
+}
+.btn4slide {
+  width:140px;
+  border-radius:15px 15px 15px 15px;
+  transition: width 2s;
+}
+.btn{
+    width:140px;
+    border-radius:0px 15px 15px 0px;
+    transition: width 2s;
+  }
+.btn:hover{
+  width:250px;
+  text-decoration:blink;
+}
+.btn4slide:hover{
+    width:250px;
+    text-decoration:blink;
+  }
+.textBackground{
+    color: white;
+    text-align: center;
+    padding: 15px; background:#999999;
+    border: 1px solid white;
+    border-radius: 50px 0px 50px 0px;    
+
+}
+#textBackground{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background:#999999;
+    border: 1px solid white;
+    border-radius: 0px 50px 0px 50px ;    
+
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    /* width: 50%; */
+    margin: auto;
+}
+.team-images{
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+}
+.w3-topnav a:hover{
+    border-bottom:2px solid skyblue;
+}
+
+
+.item-description{
+    align-content: center;
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .btn{
+  width:140px;
+  border-radius:0px 15px 15px 0px;
+  transition: width 2s;
+}
+.btn:hover{
+  width:300px;
+  text-decoration:blink;
+}
+  .weOffer{
+        width: 100%;
+      
+    }
+
+
+
+    .slide-content{
+        height: 200px;
+     }
+    .sliding-div{
+        height: 200px;
+        /* position: absolute; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     
+    }
+    .sliding-div img{
+        height: 200px;
+    }
+      .headerContainer{
+    text-align: center;
+      }
+     .cardbackground{
+        background:white;
+        margin:auto;
+      }
+    .infoText{
+        font-size: 10px;
+    }
+    .team-images{
+        width: 100px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .display-text{
+        text-align: center;
+    }
+}
