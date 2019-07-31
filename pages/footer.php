@@ -1,17 +1,18 @@
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+ <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+ <link href="../fontawesome/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="../flat-icon/flaticon.css">
 <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <style>
 	footer {
 		background-color: #292c2f;
 		width: 100%;
-		text-align: left;
+		
 		padding: 55px 50px;
 		margin-top: 30px;
 	}
 
-	footer h3 {
+	footer h4 {
 		color: #ffffff;
 		font: normal 36px 'Cookie', cursive;
 		margin: 0;
@@ -97,12 +98,10 @@
 		cursor: pointer;
 		background-color: #33383b;
 		border-radius: 2px;
-
 		font-size: 20px;
 		color: #ffffff;
 		text-align: center;
 		line-height: 35px;
-
 		margin-right: 3px;
 		margin-bottom: 5px;
 	}
@@ -174,7 +173,7 @@
 <footer>
 	<div class="row">
 		<div class="col-md-4 col-xs-12 col-sm-12">
-			<h3>DrHarry<span>PoeticEmpire</span></h3>
+			<h4>DrHarry<span>PoeticEmpire</span></h4>
 
 			<p class="footer-links">
 				<a href="#">Home</a>
@@ -191,14 +190,12 @@
 
 			<div class="footer-icons">
 
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
 				<a href="#"><i class="fab fa-whatsapp"></i></a>
-				
-
 			</div>
 		</div>
-		<div class="col-md-4 col-xs-12 col-sm-12 footer-center">
+		<div class="col-md-4 col-xs-12 col-sm-12 footer-center ">
 
 			<div>
 				<i class="fa fa-map-marker"></i>
@@ -216,7 +213,7 @@
 			</div>
 		</div>
 		<div class="col-md-4 col-xs-12 col-sm-12 footer-right">
-		<p>Contact Us</p>
+		<p>Contact Us</p><br>
 
      <form class="form" action="#" method="post">
 	<input type="text" name="email" placeholder="Email" />
@@ -228,18 +225,5 @@
 		</div>
 
 	</div>
-<div class="container">
-	
-<a href="#" title="Note" data-toggle="popover" data-placement="top" 
-data-content="The website is still under development hence some features are yet to be completed">Note</a>
- 
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-</script>
-
 	<p class="footer-company-name">PoeticEmpire &copy; <?php echo date("Y") ?></p>
 </footer>
