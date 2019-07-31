@@ -8,10 +8,9 @@
     $password=$_POST['password'];
     $confirmpass=$_POST['Confirmpassword'];
     $name=$fname ." ".$sname; 
-    if($password==$confirmpass && strlen($password)>8){
-        $pass=$password;  
-    
-    $sql = "INSERT INTO `users`(  `Full Name`, `User name`, `password`, `phone`)  VALUES (' $name','$username','$pass','$phone')";
+    if($password==$confirmpass && strlen($password)>=8){
+        $pass=$password;     
+   $sql = "INSERT INTO `users`(  `Full Name`, `User name`, `password`, `phone`)  VALUES (' $name','$username','$pass','$phone')";
 
  
 if (mysqli_query($conn, $sql)) {
@@ -21,6 +20,8 @@ if (mysqli_query($conn, $sql)) {
 }
  } else{
      echo ' <h1>Pasword miss matched</h1>';
+     echo $password;
+     echo $confirmpass;
  }
 }
 $conn->close();
