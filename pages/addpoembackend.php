@@ -13,7 +13,7 @@
  $sql = "INSERT INTO `poems`( `poet`, `poem-title`, `image-link`, `Poem -Body`) VALUES ('$poet','$poem_title','$image','$body')";
 if (mysqli_query($conn, $sql)) {
     //  echo '("New record created successfully")';
-     session_unset();
+     session_unset($_SESSION["pic"]);
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

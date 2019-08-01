@@ -1,3 +1,4 @@
+
 <div class="w3-content slide-content" style="max-width:100%;position:relative;">
 <div class="mySlides sliding-div" >
   <img src="images/16..jpg" style="width:100%;">
@@ -19,9 +20,16 @@
 <div class="mySlides sliding-div" >
   <img src="images/16..jpg" style="width:100%;">
   <div class="display-text ">
-   <h2 class=" sliderHeading2 w3-animate-left " style="">Join team</h2>
-   <p  class="slider-paragraph">Join the writers team by signing in from the link below</p>
-   <a href="pages/reg.php"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Join Here</button></a>    
+   <h2 class=" sliderHeading2 w3-animate-left " style="">Team</h2>
+   <?php
+            if (isset($_SESSION['user'])){
+            echo' <p  class="slider-paragraph">Wow ! Wow! wow! you are already part of the team</p>
+            <a href="pages/addpoem.php"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Add a poem</button></a>   ';
+             }else{
+              echo' <p  class="slider-paragraph">Join the writers team by signing in from the link below</p>
+              <a href="pages/reg.php"><button class="w3-btn btn4slide w3-khaki w3-padding-10">Join Here</button></a>   ';
+             }
+            ?>    
   </div>
 </div>
 

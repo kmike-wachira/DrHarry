@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -21,54 +25,9 @@
 
 
 <body  style="background:lightgrey;">
-  <!-- navigation bar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" 
-  style="background-color:rgb(102, 51, 0);
-    border-radius:10px;
-    padding: 5px;
-    font-size: 22px;
-    color: black; ">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Dr Harry</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="pages/poems.php">Poetry</a></li>
-          <li><a href="pages/stories.php">Books</a></li>
-          <li><a href="pages/addpoem.php">Add poem</a></li>
-          <li class="w3-dropdown-hover w3-hover-brown">
-            <a class="w3-hover-brown" href="#">Add book<span class="caret"></span></a>
-            <div class="w3-dropdown-content w3-light-grey  w3-card-4">
-              <a  class="w3-text-black" href="pages/New_book.php">New book</a>
-              <a class="w3-text-black"  href="pages/addStorybody.php">Continuation</a>
-            </div>
-          </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#signinmodal" data-toggle="modal"><span class="glyphicon  glyphicon-log-in"></span>Login<i
-                class="fa fa-caret-down"></i></a>
-          </li>
-          <li> <a href="#registermodal" data-toggle="modal"><span class="glyphicon glyphicon-user"
-                data-target=""></span> Sign up<i class="fa fa-caret-down"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> <br><br> <br><br>
-  <!-- navigation bar -->
-
-
-
 
   <?php 
+    include 'pages/index-navbar.php';
     include 'pages/slide.php';
   
   ?>
@@ -138,9 +97,17 @@
          </div>   
          <hr>      
             <p class="infoText">To achieve our main purpose,we need your contribution in writing since we are all talented
-            differently in this field in reaching different audiences.<a href="#registermodal" data-toggle="modal">Sign up </a>with us to become part of the team</p>
-          
-         <a href="pages/reg.php"> <button class="w3-btn btn w3-khaki">read more</button></a>
+            differently in this field in reaching different audiences.
+            <?php
+            if (isset($_SESSION['user'])){
+              $current_user=explode("@",$_SESSION['user']);
+            echo'thank you  '.$current_user[0].' for joining us.We would like you to start by adding a poem</p> 
+            <a href="pages/addpoem.php"> <button class="w3-btn btn w3-khaki">Add poem</button></a>';
+             }else{
+              echo'<a href="#registermodal" data-toggle="modal">Sign up </a>  with us to become part of the team</p> 
+              <a href="pages/reg.php"> <button class="w3-btn btn w3-khaki">Join</button></a>';
+             }
+            ?>
         </div>
       </div>
 
