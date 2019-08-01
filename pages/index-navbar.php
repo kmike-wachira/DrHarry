@@ -1,9 +1,5 @@
 
 <?php
-session_start();
-?>
-
-<?php
 
 if (isset($_SESSION['user'])){
   echo '<nav class="navbar navbar-inverse navbar-fixed-top navy " 
